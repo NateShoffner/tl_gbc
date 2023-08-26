@@ -220,13 +220,13 @@ void main(void)
 
 
         if(checkcollisions(&hello_gate_obj, &ball_obj)) {
-            hello_score++;
-            update_hello_score(hello_score);
+            world_score++;
+            update_hello_score(world_score);
         }
 
         if(checkcollisions(&world_gate_obj, &ball_obj)) {
-            world_score++;
-            update_world_score(world_score);
+            hello_score++;
+            update_world_score(hello_score);
         }
 
         if (ball_obj.origin.x + ball_v.dx >= BALL_MAX_X
